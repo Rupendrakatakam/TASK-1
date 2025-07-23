@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_msgs/rosidl_generator_py/conveyorbelt_msgs/conveyorbelt_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" "TARGETS" "conveyorbelt_msgs__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "lib/python3.10/site-packages/conveyorbelt_msgs")

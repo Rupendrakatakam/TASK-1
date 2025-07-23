@@ -1,0 +1,10 @@
+/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/CMakeFiles/uninstall.dir
+/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/CMakeFiles/ros2_conveyorbelt_uninstall.dir
+/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/CMakeFiles/ros2_conveyorbelt_plugin.dir
+/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/CMakeFiles/test.dir
+/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/CMakeFiles/edit_cache.dir
+/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/CMakeFiles/rebuild_cache.dir
+/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/CMakeFiles/list_install_components.dir
+/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/CMakeFiles/install.dir
+/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/CMakeFiles/install/local.dir
+/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/CMakeFiles/install/strip.dir

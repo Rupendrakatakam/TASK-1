@@ -1,0 +1,1 @@
+/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/local_setup.sh

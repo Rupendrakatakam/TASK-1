@@ -1,0 +1,1 @@
+/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/local_setup.sh

@@ -1,0 +1,7 @@
+{
+  "package_name": "conveyorbelt_msgs",
+  "non_idl_tuples": [
+    "/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/conveyorbelt_msgs:msg/ConveyorBeltState.msg",
+    "/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/conveyorbelt_msgs:srv/ConveyorBeltControl.srv"
+  ]
+}

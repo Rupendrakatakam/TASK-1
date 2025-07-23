@@ -1,0 +1,76 @@
+root_project_workspace/
+│
+├── task1-py310/                       # Python 3.10 virtual environment directory
+│
+├── src/                               # ROS 2 source workspace
+│
+│   ├── IFRA_ConveyorBelt/             # Conveyor belt-related packages (from the repository)
+│   │   ├── conveyorbelt_gazebo/
+│   │   │   ├── launch/
+│   │   │   │   └── conveyorbelt.launch.py
+│   │   │   ├── models/
+│   │   │   │   └── conveyor_belt/
+│   │   │   │       ├── meshes/
+│   │   │   │       │   ├── conveyor_belt.dae
+│   │   │   │       │   └── conveyor_belt.stl
+│   │   │   │       ├── model.config
+│   │   │   │       └── model.sdf
+│   │   │   ├── urdf/
+│   │   │   │   └── box.urdf
+│   │   │   ├── worlds/
+│   │   │   │   └── conveyorbelt.world
+│   │   │   ├── CMakeLists.txt
+│   │   │   └── package.xml
+│   │   ├── conveyorbelt_msgs/
+│   │   │   ├── msg/
+│   │   │   │   └── ConveyorBeltState.msg
+│   │   │   ├── srv/
+│   │   │   │   └── ConveyorBeltControl.srv
+│   │   │   ├── CMakeLists.txt
+│   │   │   └── package.xml
+│   │   ├── ros2_conveyorbelt/
+│   │   │   ├── src/
+│   │   │   │   └── ros2_conveyorbelt_plugin.cpp
+│   │   │   ├── python/
+│   │   │   │   ├── SpawnObject.py
+│   │   │   │   └── spawn_random_object.py    # Your random spawner node
+│   │   │   ├── include/
+│   │   │   │   └── ros2_conveyorbelt/ros2_conveyorbelt_plugin.hpp
+│   │   │   ├── CMakeLists.txt
+│   │   │   └── package.xml
+│   │   └── README.md
+│   │
+│   ├── detect_and_control/             # Custom package for detection & control
+│   │   ├── src/
+│   │   │   ├── detector_node.py            # YOLOv5 ROS 2 integration wrapper/script
+│   │   │   ├── conveyor_service_client.py  # Service client example
+│   │   ├── launch/
+│   │   │   ├── detection.launch.py
+│   │   │   └── visualization.launch.py
+│   │   ├── config/
+│   │   │   └── model_config.yaml           # Parameters for detector, etc.
+│   │   ├── CMakeLists.txt
+│   │   └── package.xml
+│   │
+│   ├── realsense_gazebo/               # Optional: D435i simulation/description
+│   │   ├── urdf/
+│   │   │   └── d435i_camera.urdf
+│   │   ├── meshes/
+│   │   │   └── d435i_visual.dae
+│   │   ├── launch/
+│   │   │   └── realsense.launch.py
+│   │   ├── CMakeLists.txt
+│   │   └── package.xml
+│   │
+│   └── yolov5_ros2/                    # (If using a YOLOv5 ROS 2 wrapper package)
+│       ├── src/
+│       ├── requirements.txt
+│       ├── launch/
+│       ├── CMakeLists.txt
+│       └── package.xml
+│
+├── install/                            # colcon install space (auto)
+├── build/                              # colcon build space (auto)
+├── log/                                # colcon log files (auto)
+│
+└── README.md                           # Root workspace documentation
