@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="realsense_d435">
+    <static>true</static>
+    <link name="camera_link">
+      <!-- Visual for mesh -->
+      <visual name="camera_visual">
+        <geometry>
+          <mesh>
+            <uri>model://realsense_d435/meshes/IntelRealsense_D435_Multibody.dae</uri>
+            <scale>0.1 0.1 0.1</scale>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <!-- Collision -->
+      <collision name="camera_collision">
+        <geometry>
+          <uri>model://realsense_d435/meshes/IntelRealsense_D435_Multibody.dae</uri>
+          <scale>0.1 0.1 0.1</scale>
+        </geometry>
+      </collision>
+
+      <!-- Sensor Plugin -->
+      <sensor name="camera_sensor" type="camera">
+        <always_on>true</always_on>
+        <update_rate>30.0</update_rate>
+        <visualize>true</visualize>
+        <camera>
+          <horizontal_fov>1.3962634</horizontal_fov> <!-- 80 deg -->
+          <image>
+            <width>1280</width>
+            <height>720</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.1</near>
+            <far>10.0</far>
+          </clip>
+        </camera>
+      
+              <!-- Depth Camera Sensor -->
+      <sensor name="d435i_depth" type="depth">
+        <always_on>true</always_on>
+        <update_rate>30</update_rate>
+        <visualize>true</visualize>
+
+        <camera>
+          <horizontal_fov>1.50098</horizontal_fov>
+          <image>
+            <width>1280</width>
+            <height>720</height>
+          </image>
+          <clip>
+            <near>0.1</near>
+            <far>100</far>
+          </clip>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.100</stddev>
+          </noise>
+        </camera>
+
+        <plugin name="gazebo_ros_camera" filename="libgazebo_ros_camera.so">
+          <ros>
+            <namespace>/camera</namespace>
+          </ros>
+          <camera_name>camera</camera_name>
+          <frame_name>camera_link</frame_name>
+        </plugin>
+      </sensor>
+    </link>
+  </model>
+</sdf>

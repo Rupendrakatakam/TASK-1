@@ -1,8 +1,8 @@
-# Install script for directory: /home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt
+# Install script for directory: /home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rupendra/Desktop/Tasks/Task1/install/ros2_conveyorbelt")
+  set(CMAKE_INSTALL_PREFIX "/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

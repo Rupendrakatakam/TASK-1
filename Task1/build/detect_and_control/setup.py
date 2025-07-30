@@ -1,1 +1,0 @@
-/home/rupendra/Desktop/Tasks/Task1/src/detect_and_control/setup.py

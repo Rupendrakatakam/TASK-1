@@ -8,14 +8,13 @@
       <uri>model://sun</uri>
     </include>
     <include>
-      <name>conveyor_belt</name>
+      <name>Industrial_automation</name>
       <pose>0 0 0 0 0 0</pose>
       <uri>model://conveyor_belt</uri>
-      <!-- <plugin>
-        <name>conveyor_belt_plugin</name>
-        <filename>/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/lib/libros2_conveyorbelt_plugin.so</filename>
-
-      </plugin> -->
+    </include>
+    <include>
+      <uri>model://realsense_d435</uri>
+      <pose>0 0 1.2 0 0 0</pose>  <!-- Adjust pose as needed -->
     </include>
   </world>
 </sdf>

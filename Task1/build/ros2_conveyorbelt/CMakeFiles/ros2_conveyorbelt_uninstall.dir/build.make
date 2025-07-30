@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt
+CMAKE_SOURCE_DIR = /home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt
+CMAKE_BINARY_DIR = /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt
 
 # Utility rule file for ros2_conveyorbelt_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ros2_conveyorbelt_uninstall.dir/compiler_depend.make
 include CMakeFiles/ros2_conveyorbelt_uninstall.dir/progress.make
 
 CMakeFiles/ros2_conveyorbelt_uninstall:
-	/usr/bin/cmake -P /home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 ros2_conveyorbelt_uninstall: CMakeFiles/ros2_conveyorbelt_uninstall
 ros2_conveyorbelt_uninstall: CMakeFiles/ros2_conveyorbelt_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ros2_conveyorbelt_uninstall.dir/clean:
 .PHONY : CMakeFiles/ros2_conveyorbelt_uninstall.dir/clean
 
 CMakeFiles/ros2_conveyorbelt_uninstall.dir/depend:
-	cd /home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt /home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt /home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt /home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt /home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/CMakeFiles/ros2_conveyorbelt_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt /home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/CMakeFiles/ros2_conveyorbelt_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ros2_conveyorbelt_uninstall.dir/depend
 

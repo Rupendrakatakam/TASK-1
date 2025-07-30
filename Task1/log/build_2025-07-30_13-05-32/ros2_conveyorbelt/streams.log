@@ -1,0 +1,149 @@
+[0.010s] Invoking command in '/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt': CMAKE_PREFIX_PATH=/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_msgs:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_msgs/lib:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt
+[0.060s] -- The C compiler identification is GNU 11.4.0
+[0.111s] -- The CXX compiler identification is GNU 11.4.0
+[0.118s] -- Detecting C compiler ABI info
+[0.187s] -- Detecting C compiler ABI info - done
+[0.192s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.192s] -- Detecting C compile features
+[0.192s] -- Detecting C compile features - done
+[0.194s] -- Detecting CXX compiler ABI info
+[0.273s] -- Detecting CXX compiler ABI info - done
+[0.278s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.278s] -- Detecting CXX compile features
+[0.278s] -- Detecting CXX compile features - done
+[0.281s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.602s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.652s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.678s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.760s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[0.797s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.801s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.808s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.817s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.829s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.861s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.863s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.879s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.886s] -- Looking for pthread.h
+[0.958s] -- Looking for pthread.h - found
+[0.958s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.031s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.032s] -- Found Threads: TRUE  
+[1.076s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[1.077s] -- Checking for module 'bullet>=2.82'
+[1.095s] --   Found bullet, version 3.05
+[1.225s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[1.282s] -- Found assimp: /usr/include (found version "5.2.0") 
+[1.298s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.322s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.335s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.339s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.344s] -- Searching for dependencies of ignition-math6
+[1.345s] -- Looking for OGRE...
+[1.345s] -- OGRE_PREFIX_WATCH changed.
+[1.352s] -- Checking for module 'OGRE'
+[1.368s] --   Found OGRE, version 1.9.0
+[1.405s] -- Found Ogre Ghadamon (1.9.0)
+[1.415s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.423s] -- Looking for OGRE_Paging...
+[1.428s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.428s] -- Looking for OGRE_Terrain...
+[1.432s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.432s] -- Looking for OGRE_Property...
+[1.436s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.436s] -- Looking for OGRE_RTShaderSystem...
+[1.441s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.441s] -- Looking for OGRE_Volume...
+[1.445s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.445s] -- Looking for OGRE_Overlay...
+[1.449s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.544s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.546s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.546s] -- Searching for dependencies of ignition-transport8
+[1.565s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.575s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.581s] -- Checking for module 'libzmq >= 4'
+[1.596s] --   Found libzmq , version 4.3.4
+[1.642s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[1.647s] -- Checking for module 'uuid'
+[1.661s] --   Found uuid, version 2.37.2
+[1.707s] -- Found UUID: TRUE  
+[1.709s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.710s] -- Searching for dependencies of ignition-msgs5
+[1.729s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.733s] -- Checking for module 'tinyxml2'
+[1.749s] --   Found tinyxml2, version 9.0.0
+[1.789s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.791s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.791s] -- Searching for dependencies of ignition-common3
+[1.791s] -- Looking for dlfcn.h - found
+[1.792s] -- Looking for libdl - found
+[1.793s] -- Found DL: TRUE  
+[1.803s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[1.804s] -- Searching for <ignition-common3> component [graphics]
+[1.805s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.806s] -- Searching for dependencies of ignition-common3-graphics
+[1.806s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.808s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.809s] -- Searching for dependencies of ignition-fuel_tools4
+[1.902s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[1.911s] -- Checking for module 'jsoncpp'
+[1.927s] --   Found jsoncpp, version 1.9.5
+[1.971s] -- Found JSONCPP: TRUE  
+[1.977s] -- Checking for module 'libzip'
+[1.993s] --   Found libzip, version 1.7.3
+[2.032s] -- Found ZIP: TRUE  
+[2.033s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.033s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.033s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.036s] -- Gazebo version: 11.10
+[2.036s] -- Checking for module 'tbb'
+[2.053s] --   Found tbb, version 2021.5.0
+[2.091s] -- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[2.131s] -- Found conveyorbelt_msgs: 0.0.0 (/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_msgs/share/conveyorbelt_msgs/cmake)
+[2.147s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.148s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.148s] -- Configured cppcheck include dirs: /home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt/include
+[2.148s] -- Configured cppcheck exclude dirs and/or files: 
+[2.149s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.149s] -- Configured cpplint exclude dirs and/or files: 
+[2.150s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.150s] -- Added test 'lint_cmake' to check CMake code style
+[2.151s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.151s] -- Added test 'uncrustify' to check C / C++ code style
+[2.151s] -- Configured uncrustify additional arguments: 
+[2.152s] -- Added test 'xmllint' to check XML markup files
+[2.154s] -- Configuring done
+[2.182s] -- Generating done
+[2.186s] -- Build files have been written to: /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt
+[2.201s] Invoked command in '/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt' returned '0': CMAKE_PREFIX_PATH=/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_msgs:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_msgs/lib:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt
+[2.202s] Invoking command in '/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt': CMAKE_PREFIX_PATH=/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_msgs:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_msgs/lib:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt -- -j16 -l16
+[2.257s] [ 50%] [32mBuilding CXX object CMakeFiles/ros2_conveyorbelt_plugin.dir/src/ros2_conveyorbelt_plugin.cpp.o[0m
+[12.341s] [100%] [32m[1mLinking CXX shared library libros2_conveyorbelt_plugin.so[0m
+[12.910s] [100%] Built target ros2_conveyorbelt_plugin
+[12.923s] Invoked command in '/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt' returned '0': CMAKE_PREFIX_PATH=/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_msgs:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_msgs/lib:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt -- -j16 -l16
+[12.925s] Invoking command in '/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt': CMAKE_PREFIX_PATH=/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_msgs:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_msgs/lib:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt
+[12.931s] -- Install configuration: ""
+[12.931s] -- Execute custom install script
+[12.931s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/share/ros2_conveyorbelt/environment/library_path.sh
+[12.940s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/share/ros2_conveyorbelt/environment/library_path.dsv
+[12.949s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/lib/libros2_conveyorbelt_plugin.so
+[12.959s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/share/ros2_conveyorbelt/python/SpawnObject.py
+[12.968s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/lib/ros2_conveyorbelt/SpawnObject.py
+[12.977s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/share/ament_index/resource_index/package_run_dependencies/ros2_conveyorbelt
+[12.985s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/share/ament_index/resource_index/parent_prefix_path/ros2_conveyorbelt
+[12.995s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/share/ros2_conveyorbelt/environment/ament_prefix_path.sh
+[13.004s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/share/ros2_conveyorbelt/environment/ament_prefix_path.dsv
+[13.014s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/share/ros2_conveyorbelt/environment/path.sh
+[13.023s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/share/ros2_conveyorbelt/environment/path.dsv
+[13.030s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/share/ros2_conveyorbelt/local_setup.bash
+[13.040s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/share/ros2_conveyorbelt/local_setup.sh
+[13.048s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/share/ros2_conveyorbelt/local_setup.zsh
+[13.058s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/share/ros2_conveyorbelt/local_setup.dsv
+[13.067s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/share/ros2_conveyorbelt/package.dsv
+[13.075s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/share/ament_index/resource_index/packages/ros2_conveyorbelt
+[13.084s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/share/ros2_conveyorbelt/cmake/ament_cmake_export_libraries-extras.cmake
+[13.093s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/share/ros2_conveyorbelt/cmake/ros2_conveyorbeltConfig.cmake
+[13.101s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/share/ros2_conveyorbelt/cmake/ros2_conveyorbeltConfig-version.cmake
+[13.110s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/share/ros2_conveyorbelt/package.xml
+[13.122s] Invoked command in '/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt' returned '0': CMAKE_PREFIX_PATH=/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_msgs:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_msgs/lib:/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt

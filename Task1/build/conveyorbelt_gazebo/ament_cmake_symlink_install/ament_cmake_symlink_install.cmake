@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/rupendra/Desktop/Tasks/Task1/install/conveyorbelt_gazebo/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_gazebo/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/rupendra/Desktop/Tasks/Task1/install/conveyorbelt_gazebo/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_gazebo/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/rupendra/Desktop/Tasks/Task1/install/conveyorbelt_gazebo/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_gazebo/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/rupendra/Desktop/Tasks/Task1/install/conveyorbelt_gazebo/${destination}")
+      set(destination "/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_gazebo/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -311,46 +311,46 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install(DIRECTORY "launch" "models" "worlds" "urdf" "DESTINATION" "share/conveyorbelt_gazebo")
-ament_cmake_symlink_install_directory("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" DIRECTORY "launch" "models" "worlds" "urdf" "DESTINATION" "share/conveyorbelt_gazebo")
+ament_cmake_symlink_install_directory("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" DIRECTORY "launch" "models" "worlds" "urdf" "DESTINATION" "share/conveyorbelt_gazebo")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/conveyorbelt_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/conveyorbelt_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/conveyorbelt_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/conveyorbelt_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/conveyorbelt_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/conveyorbelt_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/conveyorbelt_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/conveyorbelt_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/conveyorbelt_gazebo/environment")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/conveyorbelt_gazebo/environment")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/conveyorbelt_gazebo/environment")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/conveyorbelt_gazebo/environment")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/conveyorbelt_gazebo/environment")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/conveyorbelt_gazebo/environment")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/conveyorbelt_gazebo/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/conveyorbelt_gazebo/environment")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/conveyorbelt_gazebo/environment")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/conveyorbelt_gazebo/environment")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/conveyorbelt_gazebo/environment")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/conveyorbelt_gazebo/environment")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/conveyorbelt_gazebo/environment")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/conveyorbelt_gazebo/environment")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/conveyorbelt_gazebo")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/conveyorbelt_gazebo")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/conveyorbelt_gazebo")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/conveyorbelt_gazebo")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/conveyorbelt_gazebo")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/conveyorbelt_gazebo")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/conveyorbelt_gazebo")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/conveyorbelt_gazebo")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/conveyorbelt_gazebo")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/conveyorbelt_gazebo")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/conveyorbelt_gazebo")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/conveyorbelt_gazebo")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/conveyorbelt_gazebo")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/conveyorbelt_gazebo")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/conveyorbelt_gazebo")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/conveyorbelt_gazebo")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/conveyorbelt_gazebo")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/conveyorbelt_gazebo")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/conveyorbelt_gazebo")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/conveyorbelt_gazebo")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/conveyorbelt_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/conveyorbelt_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/conveyorbelt_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/conveyorbelt_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_core/conveyorbelt_gazeboConfig.cmake" "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_core/conveyorbelt_gazeboConfig-version.cmake" "DESTINATION" "share/conveyorbelt_gazebo/cmake")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_core/conveyorbelt_gazeboConfig.cmake" "/home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_gazebo/ament_cmake_core/conveyorbelt_gazeboConfig-version.cmake" "DESTINATION" "share/conveyorbelt_gazebo/cmake")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_core/conveyorbelt_gazeboConfig.cmake" "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_core/conveyorbelt_gazeboConfig-version.cmake" "DESTINATION" "share/conveyorbelt_gazebo/cmake")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_core/conveyorbelt_gazeboConfig.cmake" "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_gazebo/ament_cmake_core/conveyorbelt_gazeboConfig-version.cmake" "DESTINATION" "share/conveyorbelt_gazebo/cmake")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo/package.xml" "DESTINATION" "share/conveyorbelt_gazebo")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo/package.xml" "DESTINATION" "share/conveyorbelt_gazebo")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo/package.xml" "DESTINATION" "share/conveyorbelt_gazebo")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/conveyorbelt_gazebo/package.xml" "DESTINATION" "share/conveyorbelt_gazebo")

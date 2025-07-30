@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/rupendra/Desktop/Tasks/Task1/install/ros2_conveyorbelt/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/rupendra/Desktop/Tasks/Task1/install/ros2_conveyorbelt/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/rupendra/Desktop/Tasks/Task1/install/ros2_conveyorbelt/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/rupendra/Desktop/Tasks/Task1/install/ros2_conveyorbelt/${destination}")
+      set(destination "/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/ros2_conveyorbelt/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -311,61 +311,61 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install(FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/ros2_conveyorbelt/environment")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/ros2_conveyorbelt/environment")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/ros2_conveyorbelt/environment")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/ros2_conveyorbelt/environment")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/ros2_conveyorbelt/environment")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/ros2_conveyorbelt/environment")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/ros2_conveyorbelt/environment")
 
 # install("TARGETS" "ros2_conveyorbelt_plugin" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
-include("/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "python" "DESTINATION" "share/ros2_conveyorbelt")
-ament_cmake_symlink_install_directory("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" DIRECTORY "python" "DESTINATION" "share/ros2_conveyorbelt")
+ament_cmake_symlink_install_directory("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" DIRECTORY "python" "DESTINATION" "share/ros2_conveyorbelt")
 
 # install(PROGRAMS "python/SpawnObject.py" "DESTINATION" "lib/ros2_conveyorbelt")
-ament_cmake_symlink_install_programs("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" PROGRAMS "python/SpawnObject.py" "DESTINATION" "lib/ros2_conveyorbelt")
+ament_cmake_symlink_install_programs("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" PROGRAMS "python/SpawnObject.py" "DESTINATION" "lib/ros2_conveyorbelt")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ros2_conveyorbelt" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ros2_conveyorbelt" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ros2_conveyorbelt" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ros2_conveyorbelt" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ros2_conveyorbelt" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ros2_conveyorbelt" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ros2_conveyorbelt" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ros2_conveyorbelt" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/ros2_conveyorbelt/environment")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/ros2_conveyorbelt/environment")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/ros2_conveyorbelt/environment")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ros2_conveyorbelt/environment")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ros2_conveyorbelt/environment")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ros2_conveyorbelt/environment")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ros2_conveyorbelt/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/ros2_conveyorbelt/environment")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/ros2_conveyorbelt/environment")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/ros2_conveyorbelt/environment")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ros2_conveyorbelt/environment")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ros2_conveyorbelt/environment")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ros2_conveyorbelt/environment")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ros2_conveyorbelt/environment")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ros2_conveyorbelt")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ros2_conveyorbelt")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ros2_conveyorbelt")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ros2_conveyorbelt")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ros2_conveyorbelt")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ros2_conveyorbelt")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ros2_conveyorbelt")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ros2_conveyorbelt")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ros2_conveyorbelt")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ros2_conveyorbelt")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ros2_conveyorbelt")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ros2_conveyorbelt")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ros2_conveyorbelt")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ros2_conveyorbelt")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ros2_conveyorbelt")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ros2_conveyorbelt")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ros2_conveyorbelt")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ros2_conveyorbelt")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ros2_conveyorbelt")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ros2_conveyorbelt")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_index/share/ament_index/resource_index/packages/ros2_conveyorbelt" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_index/share/ament_index/resource_index/packages/ros2_conveyorbelt" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_index/share/ament_index/resource_index/packages/ros2_conveyorbelt" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_index/share/ament_index/resource_index/packages/ros2_conveyorbelt" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/ros2_conveyorbelt/cmake")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/ros2_conveyorbelt/cmake")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/ros2_conveyorbelt/cmake")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/ros2_conveyorbelt/cmake")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_core/ros2_conveyorbeltConfig.cmake" "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_core/ros2_conveyorbeltConfig-version.cmake" "DESTINATION" "share/ros2_conveyorbelt/cmake")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_core/ros2_conveyorbeltConfig.cmake" "/home/rupendra/Desktop/Tasks/Task1/build/ros2_conveyorbelt/ament_cmake_core/ros2_conveyorbeltConfig-version.cmake" "DESTINATION" "share/ros2_conveyorbelt/cmake")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_core/ros2_conveyorbeltConfig.cmake" "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_core/ros2_conveyorbeltConfig-version.cmake" "DESTINATION" "share/ros2_conveyorbelt/cmake")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_core/ros2_conveyorbeltConfig.cmake" "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_core/ros2_conveyorbeltConfig-version.cmake" "DESTINATION" "share/ros2_conveyorbelt/cmake")
 
-# install(FILES "/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt/package.xml" "DESTINATION" "share/ros2_conveyorbelt")
-ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt/package.xml" "DESTINATION" "share/ros2_conveyorbelt")
+# install(FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt/package.xml" "DESTINATION" "share/ros2_conveyorbelt")
+ament_cmake_symlink_install_files("/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt" FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/ros2_conveyorbelt/package.xml" "DESTINATION" "share/ros2_conveyorbelt")

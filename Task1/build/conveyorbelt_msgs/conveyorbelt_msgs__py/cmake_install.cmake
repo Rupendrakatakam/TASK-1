@@ -1,8 +1,8 @@
-# Install script for directory: /home/rupendra/Desktop/Tasks/Task1/build/conveyorbelt_msgs/conveyorbelt_msgs__py
+# Install script for directory: /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_msgs/conveyorbelt_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rupendra/Desktop/Tasks/Task1/install/conveyorbelt_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/conveyorbelt_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

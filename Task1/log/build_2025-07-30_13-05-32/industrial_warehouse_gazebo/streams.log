@@ -1,0 +1,53 @@
+[0.010s] Invoking command in '/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/rupendra/Desktop/Tasks/TASK-1/Task1/src/industrial_warehouse_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo
+[0.060s] -- The C compiler identification is GNU 11.4.0
+[0.112s] -- The CXX compiler identification is GNU 11.4.0
+[0.120s] -- Detecting C compiler ABI info
+[0.187s] -- Detecting C compiler ABI info - done
+[0.192s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.193s] -- Detecting C compile features
+[0.193s] -- Detecting C compile features - done
+[0.195s] -- Detecting CXX compiler ABI info
+[0.270s] -- Detecting CXX compiler ABI info - done
+[0.276s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.276s] -- Detecting CXX compile features
+[0.276s] -- Detecting CXX compile features - done
+[0.279s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.645s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.701s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.720s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.801s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.802s] -- Added test 'lint_cmake' to check CMake code style
+[0.802s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.804s] -- Added test 'xmllint' to check XML markup files
+[0.806s] -- Configuring done
+[0.808s] -- Generating done
+[0.810s] -- Build files have been written to: /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo
+[0.814s] Invoked command in '/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/rupendra/Desktop/Tasks/TASK-1/Task1/src/industrial_warehouse_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo
+[0.815s] Invoking command in '/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo -- -j16 -l16
+[0.855s] Invoked command in '/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo -- -j16 -l16
+[0.857s] Invoking command in '/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo
+[0.863s] -- Install configuration: ""
+[0.863s] -- Execute custom install script
+[0.864s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo/share/industrial_warehouse_gazebo/launch/warehouse.launch.py
+[0.871s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo/share/industrial_warehouse_gazebo/models/conveyor_belt/meshes/IntelRealsense_D435_Multibody.stl
+[0.879s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo/share/industrial_warehouse_gazebo/models/conveyor_belt/meshes/conveyor_belt.dae
+[0.888s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo/share/industrial_warehouse_gazebo/models/conveyor_belt/meshes/conveyor_belt.stl
+[0.896s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo/share/industrial_warehouse_gazebo/models/conveyor_belt/model.config
+[0.905s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo/share/industrial_warehouse_gazebo/models/conveyor_belt/model.sdf
+[0.914s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo/share/industrial_warehouse_gazebo/worlds/industrial_warehouse.world
+[0.922s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo/share/ament_index/resource_index/package_run_dependencies/industrial_warehouse_gazebo
+[0.931s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo/share/ament_index/resource_index/parent_prefix_path/industrial_warehouse_gazebo
+[0.940s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo/share/industrial_warehouse_gazebo/environment/ament_prefix_path.sh
+[0.949s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo/share/industrial_warehouse_gazebo/environment/ament_prefix_path.dsv
+[0.958s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo/share/industrial_warehouse_gazebo/environment/path.sh
+[0.967s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo/share/industrial_warehouse_gazebo/environment/path.dsv
+[0.976s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo/share/industrial_warehouse_gazebo/local_setup.bash
+[0.985s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo/share/industrial_warehouse_gazebo/local_setup.sh
+[0.993s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo/share/industrial_warehouse_gazebo/local_setup.zsh
+[1.003s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo/share/industrial_warehouse_gazebo/local_setup.dsv
+[1.012s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo/share/industrial_warehouse_gazebo/package.dsv
+[1.020s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo/share/ament_index/resource_index/packages/industrial_warehouse_gazebo
+[1.028s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo/share/industrial_warehouse_gazebo/cmake/industrial_warehouse_gazeboConfig.cmake
+[1.036s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo/share/industrial_warehouse_gazebo/cmake/industrial_warehouse_gazeboConfig-version.cmake
+[1.044s] -- Symlinking: /home/rupendra/Desktop/Tasks/TASK-1/Task1/install/industrial_warehouse_gazebo/share/industrial_warehouse_gazebo/package.xml
+[1.055s] Invoked command in '/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo
