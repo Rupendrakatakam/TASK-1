@@ -1,0 +1,236 @@
+<?xml version="1.0" ?>
+
+<!--
+
+# ===================================== COPYRIGHT ===================================== #
+#                                                                                       #
+#  IFRA (Intelligent Flexible Robotics and Assembly) Group, CRANFIELD UNIVERSITY        #
+#  Created on behalf of the IFRA Group at Cranfield University, United Kingdom          #
+#  E-mail: IFRA@cranfield.ac.uk                                                         #
+#                                                                                       #
+#  Licensed under the Apache-2.0 License.                                               #
+#  You may not use this file except in compliance with the License.                     #
+#  You may obtain a copy of the License at: http://www.apache.org/licenses/LICENSE-2.0  #
+#                                                                                       #
+#  Unless required by applicable law or agreed to in writing, software distributed      #
+#  under the License is distributed on an "as-is" basis, without warranties or          #
+#  conditions of any kind, either express or implied. See the License for the specific  #
+#  language governing permissions and limitations under the License.                    #
+#                                                                                       #
+#  IFRA Group - Cranfield University                                                    #
+#  AUTHORS: Mikel Bueno Viso - Mikel.Bueno-Viso@cranfield.ac.uk                         #
+#           Dr. Seemal Asif  - s.asif@cranfield.ac.uk                                   #
+#           Prof. Phil Webb  - p.f.webb@cranfield.ac.uk                                 #
+#                                                                                       #
+#  Date: June, 2023.                                                                    #
+#                                                                                       #
+# ===================================== COPYRIGHT ===================================== #
+
+# ===================================== COPYRIGHT ===================================== #
+#                                                                                       #
+#  The CAD file of the ConveyorBelt has been taken from the rokokoo/conveyor_demo ROS2  #
+#  package. The .urdf file has been converted to a Gazebo model (.srdf).                #                                                                  
+#                                                                                       #
+#  Copyright (C) 2021, GitHub/rokokoo                                                   #                                    
+#                                                                                       #
+# ===================================== COPYRIGHT ===================================== #
+
+# ======= CITE OUR WORK ======= #
+# You can cite our work with the following statement:
+# IFRA-Cranfield (2023) Gazebo-ROS2 Conveyor Belt Plugin. URL: https://github.com/IFRA-Cranfield/IFRA_ConveyorBelt.
+
+-->
+
+<sdf version="1.4">
+
+    <model name="conveyor_belt">
+
+        <model name="conveyorbelt_fixed">
+
+            <static>true</static>
+
+            <link name="belt_visual">
+                <visual name="visual">
+                    <geometry>
+                        <mesh>
+                            <scale>1 2 1</scale>
+                            <uri>model://conveyor_belt/meshes/conveyor_belt.dae</uri>
+                        </mesh>
+                    </geometry>
+                </visual>
+                <collision name="collision">
+                    <origin xyz="0.0 0.0 0" rpy="0.0 0.0 0.0"/>
+                    <geometry>
+                        <mesh>
+                            <scale>1 2 1</scale>
+                            <uri>model://conveyor_belt/meshes/conveyor_belt.dae</uri>
+                        </mesh>
+                    </geometry>
+                </collision>
+            </link>
+
+        </model>
+
+        <model name="conveyorbelt_moving">
+
+            <allow_auto_disable>0</allow_auto_disable>
+            <static>false</static>
+
+            <pose>0 0 0.741 0 0 0.0</pose>
+
+            <link name="belt_moving">
+                <inertial>
+                    <mass>100.0</mass>
+                    <inertia>
+                        <ixx>0.0</ixx>
+                        <ixy>0.0</ixy>
+                        <ixz>0.0</ixz>
+                        <iyy>0.0</iyy>
+                        <iyz>0.0</iyz>
+                        <izz>0.0</izz>
+                    </inertia>
+                </inertial>
+                <collision name="belt_collision">
+                    <geometry>
+                        <box>
+                            <size>0.425 1.2 0.00001</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>100.0</mu>
+                                <mu2>100.0</mu2>
+                            </ode>
+                            <torsional>
+                                <coefficient>1000.0</coefficient>
+                                <patch_radius>0.1</patch_radius>
+                            </torsional>
+                        </friction>
+                    </surface>
+                </collision>
+                <!--
+                <visual name="belt_visual">
+                    <geometry>
+                        <box>
+                            <size>0.425 1.2 0.001</size>
+                        </box>
+                    </geometry>
+                </visual>
+                -->
+            </link>
+
+            <!-- Simulated D435i Camera -->
+            <link name="d435_camera_link">
+                <kinematic>true</kinematic>
+                <pose>0 0 1.2 0 1.5707 0</pose> <!-- Adjust above conveyor -->
+                <visual name="camera_visual">
+                    <geometry>
+                        <mesh>
+                            <uri>model://conveyor_belt/meshes/IntelRealsense_D435_Multibody.stl</uri>
+                            <scale>0.1 0.1 0.1</scale>
+                        </mesh>
+                    </geometry>
+                </visual>
+                <collision name="camera_collision">
+                    <geometry>
+                        <mesh>
+                            <uri>model://conveyor_belt/meshes/IntelRealsense_D435_Multibody.stl</uri>
+                            <scale>0.1 0.1 0.1</scale>
+                        </mesh>
+                    </geometry>
+                </collision>
+                <sensor name="d435i_color" type="camera">
+                    <camera>
+                        <horizontal_fov>1.21126</horizontal_fov>
+                        <image>
+                            <width>1280</width>
+                            <height>720</height>
+                            <format>RGB_INT8</format>
+                        </image>
+                        <clip>
+                            <near>0.1</near>
+                            <far>100</far>
+                        </clip>
+                        <noise>
+                            <type>gaussian</type>
+                            <mean>0.0</mean>
+                            <stddev>0.007</stddev>
+                        </noise>
+                    </camera>
+                    <always_on>1</always_on>
+                    <update_rate>30</update_rate>
+                    <visualize>true</visualize>
+                    <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+                        <camera_name>d435i</camera_name>
+                        <image_topic_name>color/image_raw</image_topic_name>
+                        <camera_info_topic_name>color/camera_info</camera_info_topic_name>
+                        <frame_name>d435_camera_link</frame_name>
+                    </plugin>
+                </sensor>
+                <sensor name="d435i_depth" type="depth">
+                    <camera>
+                        <horizontal_fov>1.50098</horizontal_fov>
+                        <image>
+                            <width>1280</width>
+                            <height>720</height>
+                        </image>
+                        <clip>
+                            <near>0.1</near>
+                            <far>100</far>
+                        </clip>
+                        <noise>
+                            <type>gaussian</type>
+                            <mean>0.0</mean>
+                            <stddev>0.100</stddev>
+                        </noise>
+                    </camera>
+                    <always_on>1</always_on>
+                    <update_rate>30</update_rate>
+                    <visualize>true</visualize>
+                    <plugin name="depth_controller" filename="libgazebo_ros_camera.so">
+                        <camera_name>d435i</camera_name>
+                        <image_topic_name>depth/image_raw</image_topic_name>
+                        <camera_info_topic_name>depth/camera_info</camera_info_topic_name>
+                        <point_cloud_topic_name>depth/points</point_cloud_topic_name>
+                        <frame_name>d435_camera_link</frame_name>
+                    </plugin>
+                </sensor>
+            </link>
+
+
+        </model>
+
+        <joint name="belt_joint" type="prismatic">
+            <parent>conveyorbelt_fixed::belt_visual</parent>
+            <child>conveyorbelt_moving::belt_moving</child>
+            <axis>
+                <xyz>0 1 0</xyz>
+                <limit>
+                    <lower>0.0</lower>
+                    <upper>0.01</upper>
+                </limit>
+            </axis>
+        </joint>
+
+        <!-- <plugin name="ros2_conveyorbelt_plugin" filename="libros2_conveyorbelt_plugin.so" >
+            <ros>
+                <namespace></namespace>
+            </ros>
+            <max_velocity>1.0</max_velocity>
+            <publish_rate>1000</publish_rate>
+        </plugin> -->
+
+        <gazebo>
+            <plugin filename="libROS2ConveyorBeltPlugin.so" name="ros2_conveyorbelt_plugin">
+                <ros>
+                    <namespace></namespace>
+                </ros>
+                <max_velocity>0.2</max_velocity>
+                <publish_rate>10</publish_rate>
+            </plugin>
+        </gazebo>
+
+    </model>
+
+</sdf>
