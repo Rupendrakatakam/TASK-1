@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<sdf version="1.4">
+<sdf version="1.6">
 
   <model name="conveyor_belt">
     <!-- Fixed Base of the Conveyor -->
@@ -10,7 +10,7 @@
         <visual name="visual">
           <geometry>
             <mesh>
-              <uri>model://meshes/conveyor_belt.dae</uri>
+              <uri>model://conveyor/meshes/conveyor_belt.dae</uri>
               <scale>1 2 1</scale>
             </mesh>
           </geometry>
@@ -19,7 +19,7 @@
         <collision name="collision">
           <geometry>
             <mesh>
-              <uri>model://meshes/conveyor_belt.dae</uri>
+              <uri>model://conveyor/meshes/conveyor_belt.dae</uri>
               <scale>1 2 1</scale>
             </mesh>
           </geometry>

@@ -23,7 +23,7 @@ def generate_launch_description():
         package='tf2_ros',
         executable='static_transform_publisher',
         name='static_transform_publisher',
-        arguments=['0', '0', '1.941', '0', '1.5707', '0', 'world', 'camera_link']
+        arguments=['0', '0', '1.941', '0', '3.14', '0', 'world', 'camera_link']
     )
 
     # RViz2 (optional)
