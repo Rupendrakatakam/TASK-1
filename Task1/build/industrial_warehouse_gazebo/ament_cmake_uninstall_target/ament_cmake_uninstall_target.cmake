@@ -55,6 +55,3 @@ endforeach()
 message(STATUS "Execute custom uninstall script")
 
 # begin of custom uninstall code
-
-# uninstall files installed using the symlink install functions
-include("/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo/ament_cmake_symlink_install/ament_cmake_symlink_install_uninstall_script.cmake")

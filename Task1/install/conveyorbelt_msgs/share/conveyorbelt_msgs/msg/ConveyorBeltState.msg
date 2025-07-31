@@ -1,1 +1,2 @@
-/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/conveyorbelt_msgs/msg/ConveyorBeltState.msg
+float64 power   # POWER of the belt (percentage, in +Y direction of belt frame).
+bool enabled    # {true} if the power of the belt can be modified // {false} if the belt is stopped.

@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/conveyorbelt_msgs
+CMAKE_SOURCE_DIR = /home/rupendra/Desktop/Tasks/TASK-1/Task1/src/conveyorbelt_msgs
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_msgs

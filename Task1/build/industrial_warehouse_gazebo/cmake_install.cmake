@@ -43,7 +43,70 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/industrial_warehouse_gazebo" TYPE DIRECTORY FILES
+    "/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/industrial_warehouse_gazebo/launch"
+    "/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/industrial_warehouse_gazebo/models"
+    "/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/industrial_warehouse_gazebo/worlds"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/industrial_warehouse_gazebo")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/industrial_warehouse_gazebo")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/industrial_warehouse_gazebo/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/industrial_warehouse_gazebo/environment" TYPE FILE FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/industrial_warehouse_gazebo/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/industrial_warehouse_gazebo/environment" TYPE FILE FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo/ament_cmake_environment_hooks/path.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/industrial_warehouse_gazebo" TYPE FILE FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo/ament_cmake_environment_hooks/local_setup.bash")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/industrial_warehouse_gazebo" TYPE FILE FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo/ament_cmake_environment_hooks/local_setup.sh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/industrial_warehouse_gazebo" TYPE FILE FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo/ament_cmake_environment_hooks/local_setup.zsh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/industrial_warehouse_gazebo" TYPE FILE FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo/ament_cmake_environment_hooks/local_setup.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/industrial_warehouse_gazebo" TYPE FILE FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo/ament_cmake_environment_hooks/package.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/industrial_warehouse_gazebo")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/industrial_warehouse_gazebo/cmake" TYPE FILE FILES
+    "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo/ament_cmake_core/industrial_warehouse_gazeboConfig.cmake"
+    "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo/ament_cmake_core/industrial_warehouse_gazeboConfig-version.cmake"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/industrial_warehouse_gazebo" TYPE FILE FILES "/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/industrial_warehouse_gazebo/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

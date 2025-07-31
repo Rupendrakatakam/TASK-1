@@ -1,1 +1,2 @@
-/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_msgs/rosidl_cmake/srv/ConveyorBeltControl_Response.msg
+
+bool success    # RESULT: SUCCESS message.

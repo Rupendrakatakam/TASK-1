@@ -1,1 +1,20 @@
-/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/industrial_warehouse_gazebo/worlds/industrial_warehouse.world
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <name>Industrial_automation</name>
+      <pose>0 0 0 0 0 0</pose>
+      <uri>model://conveyor_belt</uri>
+    </include>
+    <include>
+      <uri>model://realsense_d435</uri>
+      <pose>0 0 2 0 1.5707 0</pose>  <!-- Adjust pose as needed -->
+    </include>
+  </world>
+</sdf>
