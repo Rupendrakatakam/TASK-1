@@ -1,1 +1,2 @@
-/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/industrial_warehouse_gazebo/ament_cmake_environment_hooks/local_setup.dsv
+source;share/industrial_warehouse_gazebo/environment/ament_prefix_path.sh
+source;share/industrial_warehouse_gazebo/environment/path.sh

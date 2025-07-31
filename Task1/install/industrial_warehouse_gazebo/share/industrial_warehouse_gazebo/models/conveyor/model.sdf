@@ -1,1 +1,94 @@
-/home/rupendra/Desktop/Tasks/TASK-1/Task1/src/industrial_warehouse_gazebo/models/conveyor/model.sdf
+<?xml version="1.0" ?>
+<sdf version="1.6">
+
+  <model name="conveyor_belt">
+    <!-- Fixed Base of the Conveyor -->
+    <model name="conveyorbelt_fixed">
+      <static>true</static>
+
+      <link name="belt_visual">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>model://conveyor/meshes/conveyor_belt.dae</uri>
+              <scale>1 2 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>model://conveyor/meshes/conveyor_belt.dae</uri>
+              <scale>1 2 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Moving Part of the Conveyor -->
+    <model name="conveyorbelt_moving">
+      <static>false</static>
+      <allow_auto_disable>0</allow_auto_disable>
+      <pose>0 0 0.741 0 0 0</pose>
+
+      <!-- Moving Belt Link -->
+      <link name="belt_moving">
+        <inertial>
+          <mass>100.0</mass>
+          <inertia>
+            <ixx>0.0</ixx> <iyy>0.0</iyy> <izz>0.0</izz>
+            <ixy>0.0</ixy> <ixz>0.0</ixz> <iyz>0.0</iyz>
+          </inertia>
+        </inertial>
+
+        <collision name="belt_collision">
+          <geometry>
+            <box>
+              <size>0.425 1.2 0.00001</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100.0</mu>
+                <mu2>100.0</mu2>
+              </ode>
+              <torsional>
+                <coefficient>1000.0</coefficient>
+                <patch_radius>0.1</patch_radius>
+              </torsional>
+            </friction>
+          </surface>
+        </collision>
+      </link>
+
+
+
+    <!-- Prismatic Joint Between Fixed and Moving Belts -->
+    <joint name="belt_joint" type="prismatic">
+      <parent>conveyorbelt_fixed::belt_visual</parent>
+      <child>conveyorbelt_moving::belt_moving</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>0.0</lower>
+          <upper>0.01</upper>
+        </limit>
+      </axis>
+    </joint>
+
+    <!-- Conveyor Belt ROS 2 Plugin -->
+    <gazebo>
+      <plugin name="ros2_conveyorbelt_plugin" filename="libROS2ConveyorBeltPlugin.so">
+        <ros>
+          <namespace></namespace>
+        </ros>
+        <max_velocity>0.2</max_velocity>
+        <publish_rate>10</publish_rate>
+      </plugin>
+    </gazebo>
+
+  </model>
+</sdf>

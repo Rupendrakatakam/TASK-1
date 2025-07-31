@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/conveyorbelt_msgs
+CMAKE_SOURCE_DIR = /home/rupendra/Desktop/Tasks/TASK-1/Task1/src/conveyorbelt_msgs
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_msgs
@@ -140,6 +140,6 @@ conveyorbelt_msgs__py/CMakeFiles/conveyorbelt_msgs__py.dir/clean:
 .PHONY : conveyorbelt_msgs__py/CMakeFiles/conveyorbelt_msgs__py.dir/clean
 
 conveyorbelt_msgs__py/CMakeFiles/conveyorbelt_msgs__py.dir/depend:
-	cd /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rupendra/Desktop/Tasks/TASK-1/Task1/src/IFRA_ConveyorBelt/conveyorbelt_msgs /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_msgs/conveyorbelt_msgs__py /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_msgs /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_msgs/conveyorbelt_msgs__py /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_msgs/conveyorbelt_msgs__py/CMakeFiles/conveyorbelt_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rupendra/Desktop/Tasks/TASK-1/Task1/src/conveyorbelt_msgs /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_msgs/conveyorbelt_msgs__py /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_msgs /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_msgs/conveyorbelt_msgs__py /home/rupendra/Desktop/Tasks/TASK-1/Task1/build/conveyorbelt_msgs/conveyorbelt_msgs__py/CMakeFiles/conveyorbelt_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : conveyorbelt_msgs__py/CMakeFiles/conveyorbelt_msgs__py.dir/depend
 

@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/libros2_conveyorbelt_plugin.so" "TARGETS" "ros2_conveyorbelt_plugin" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

@@ -1,1 +1,1 @@
-/home/rupendra/Desktop/Tasks/TASK-1/Task1/build/ros2_conveyorbelt/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ros2_conveyorbelt
+gazebo_ros;gazebo_dev;gazebo_msgs;rclcpp;ament_lint_auto;ament_lint_common
